@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agenda de Contactos</title>
+</head>
+<body>
+    <h1>Lista de Contactos</h1>
+    <ul>
+        {% for contacto in contactos %}
+            <li>{{ contacto.nombre }} - {{ contacto.telefono }} - {{ contacto.email }} </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

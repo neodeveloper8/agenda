@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Contacto</title>
+</head>
+<body>
+    <h1>Editar Contacto</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar cambios</button>
+    </form>
+    <a href="{% url 'listar_contactos' %}">Volver a la lista de contactos</a>
+</body>
+</html>
